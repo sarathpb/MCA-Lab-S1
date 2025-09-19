@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learn CSS</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .learn-section {
+      text-align: center;
+      background: linear-gradient(to right, #e0f7fa, #fff);
+      padding: 20px;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    /* Navigation Styling */
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      background-color: #2c3e50;
+      padding: 15px;
+    }
+
+    .nav-links a {
+      color: #ecf0f1;
+      margin: 0 15px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #1abc9c;
+    }
+
+    /* Section Styling */
+    .content-section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 5px solid #3498db;
+      overflow-x: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="top-section" style="display: flex; align-items: center; padding: 20px; background-color: #f8f9fa;">
+    <img src="https://via.placeholder.com/120" alt="CSS World" style="margin-right: 20px;">
+    <h1 style="color: #2c3e50;">Welcome to the World of CSS</h1> <!-- Inline CSS used here -->
+  </header>
+
+  <!-- Learn Section -->
+  <section class="learn-section">
+    <p>Learn how to style your website beautifully!</p>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#syntax">Syntax</a>
+    <a href="#types">Type of CSS</a>
+    <a href="#selectors">Selectors</a>
+  </nav>
+
+  <!-- Content Sections -->
+  <section id="home" class="content-section">
+    <h2>Home</h2>
+    <p>This page will help you understand how CSS works using all 3 types: <strong>Inline</strong>, <strong>Internal</strong>, and <strong>External</strong> CSS.</p>
+  </section>
+
+  <section id="syntax" class="content-section">
+    <h2>CSS Syntax</h2>
+    <p>CSS rules are made up of selectors and declaration blocks.</p>
+    <pre>
+selector {
+  property: value;
+}
+    </pre>
+    <img src="css-syntax.png" alt="CSS Syntax Diagram">
+  </section>
+
+  <section id="types" class="content-section">
+    <h2>Types of CSS</h2>
+    <ul>
+      <li><strong>Inline CSS</strong> – applied directly to an element via the style attribute</li>
+      <li><strong>Internal CSS</strong> – defined inside &lt;style&gt; tag in the HTML document</li>
+      <li><strong>External CSS</strong> – written in a separate file (like <code>styles.css</code>)</li>
+    </ul>
+  </section>
+
+  <section id="selectors" class="content-section">
+    <h2>Element Selector</h2>
+    <p>The element selector selects elements based on the tag name. For example:</p>
+    <pre>
+p {
+  color: blue;
+}
+    </pre>
+    <p>It will make all &lt;p&gt; tags blue.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Element_selectors" target="_blank">
+      For more information, click here
+    </a>
+  </section>
+
+</body>
+</html>
+
+        

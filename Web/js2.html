@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="abc"></h1>
+    <button id="red" onclick="red();">Red</button>
+    <button id="green" onclick="green();">Green</button>
+    <button id="blue" onclick="blue();">Blue</button>
+</body>
+<script>
+    function red()
+    {
+        document.getElementById("abc").style.color="red";
+    }
+     function green()
+    {
+        document.getElementById("abc").style.color="green";
+    }
+     function blue()
+    {
+        document.getElementById("abc").style.color="blue";
+    }
+    let x=prompt("enter your name")
+    document.getElementById("abc").innerHTML="welcome"+x;
+</script>
+</html>

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions Demo</title>
+</head>
+<body>
+    <script>
+        let t = "abcdefghi";
+        let len = t.length;
+        document.write("Length of string = " + len + "<br>");
+
+        let slice = t.slice();
+        document.write("Sliced string = " + slice + "<br>");
+
+        let Upp = t.toUpperCase();
+        document.write("Uppercase = " + Upp + "<br>");
+
+        let low = t.toLowerCase();
+        document.write("Lowercase = " + low + "<br>");
+
+        let subStr = t.substring(2, 5);
+        document.write("Substring () = " + subStr + "<br>");
+
+        let index = t.indexOf("a");
+        document.write("Index () = " + index + "<br>");
+
+        let lastindex = t.lastIndexOf("i");
+        document.write("Lastindex () = " + lastindex + "<br>");
+
+        let search = t.search("g");
+        document.write("search () = " + search + "<br>");
+
+        let substr = t.substr(2, 5);
+        document.write("substr () = " + substr + "<br>");
+
+        let replace = t.replace("i", "x");
+        document.write("replace () = " + replace + "<br>");
+
+        let concat = t.concat("hello");
+        document.write("concat () = " + concat + "<br>");
+
+        //mathfunctions
+
+         let round = Math.round(20);
+        document.write("round() = " + round + "<br>");
+
+        let ceil = Math.ceil(12);
+        document.write("ceil() = " + ceil + "<br>");
+
+        let floor = Math.floor(10);
+        document.write("floor() = " + floor + "<br>");
+
+        let trunc = Math.trunc(8);
+        document.write("trunc() = " + trunc + "<br>");
+
+        let sign = Math.sign(14);
+        document.write("sign() = " + sign + "<br>");
+
+        let pow = Math.pow(2, 3); 
+        document.write("pow() = " + pow + "<br>");
+
+        let sqrt = Math.sqrt(16);
+        document.write("sqrt() = " + sqrt + "<br>");
+
+        let abs = Math.abs(-3);
+        document.write("abs() = " + abs + "<br>");
+
+        let sin = Math.sin(7);
+        document.write("sin() = " + sin + "<br>");
+
+        let cos = Math.cos(18);
+        document.write("cos() = " + cos + "<br>");
+
+        let min = Math.min(3, 7, 1, 9);
+        document.write("min() = " + min + "<br>");
+
+        let max = Math.max(3, 7, 1, 9);
+        document.write("max() = " + max + "<br>");
+
+        let random = Math.random();
+        document.write("random() = " + random + "<br>");
+
+    </script>
+</body>
+</html>
